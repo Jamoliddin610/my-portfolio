@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/icon-site.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/typed.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".wrapper").typed({
+                strings:[
+                    "Web Developer",
+                    "Freelancer"
+                ],
+                typeSpeed:70,
+                backDelay:200,
+                loop:true
+            })
+        })
+    </script>
+    <title>Najmiddinov Jamoliddin</title>
+</head>
+
+<body class="site-body" id="bodySite">
+    <section class="hero">
+        <div class="hero__back-img">
+            <div class="hero__box container">
+                <div class="hero__inner">
+                    <p class="hero__greeting">Hello</p>
+                    <h1 class="hero__name">I'M NAJMIDDINOV JAMOLIDDIN</h1>
+                    <div class="hero__about">
+                        <h2>A Freelance  <span class="wrapper"></span></h2>
+
+                    </div>
+                    <a href="#contact" class="hero__link btn">Hire Me</a>
+                </div>
+                <div class="hero__down-scroll down">
+                    <span class="down__line"></span>
+                    <span class="down__line"></span>
+                    <span class="down__line"></span>
+
+                </div>
+            </div>
+        </div>
+        <button class="hero__btn-open" id="BtnModalopen"><i class="bx bx-right-arrow-alt"></i></button>
+
+    </section>
+    <section class="modal" id="modalEl">
+        <div class="modal__box">
+            <div class="modal__head-box">
+                <a href="#" class="modal__logo">
+                    <div class="modal__logo ">
+                        <span class="modal__logo-name">NJN</span>
+                        <span class="modal__logochik"></span>
+                    </div>
+                </a>
+                <p class="modal__name">najmiddinov jamoliddin</p>
+            </div>
+            <ul class="modal__list">
+                <li class="modal__items"><a href="#" class="modal__link">Home</a></li>
+                <li class="modal__items"><a href="#" class="modal__link">About</a></li>
+                <li class="modal__items"><a href="#" class="modal__link">Services</a></li>
+                <li class="modal__items"><a href="#" class="modal__link">Portfolio</a></li>
+                <li class="modal__items"><a href="#" class="modal__link">Contact</a></li>
+                <li class="modal__items">Settings <div class="setting">
+                        <p class="setting__title">Color:</p>
+                        <ul class="setting__list">
+                            <li class="setting__items"><button class="setting__link" id="red-color"></button></li>
+                            <li class="setting__items"><button class="setting__link" id="blue-color"></button></li>
+                            <li class="setting__items"><button class="setting__link" id="yellow-color"></button></li>
+                            <li class="setting__items"><button class="setting__link" id="green-color"></button></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="modal__foot-box">
+                <p class="modal__nav-name">Follow me</p>
+                <ul class="modal__apps-list">
+                    <li class="modal__apps-items"><a href="#" class="modal__apps-link"><i
+                                class="bx bxl-telegram"></i></a></li>
+                    <li class="modal__apps-items"><a href="#" class="modal__apps-link"><i
+                                class="bx bxl-instagram"></i></a></li>
+                    <li class="modal__apps-items"><a href="#" class="modal__apps-link"><i
+                                class="bx bxl-facebook"></i></a></li>
+                    <li class="modal__apps-items"><a href="#" class="modal__apps-link"><i class="bx bxl-github"></i></a>
+                    </li>
+                    <li class="modal__apps-items"><a href="#" class="modal__apps-link"><i
+                                class="bx bxl-netlify"></i></a></li>
+                </ul>
+                <p class="modal__reserved">© 2020 All Rights Reserved</p>
+            </div>
+            <button class="modal__btn-close" id="BtnModalclose"><i class="bx bx-left-arrow-alt"></i></button>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
