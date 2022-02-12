@@ -75,23 +75,24 @@ a {
 
 .hero__inner {
     text-align: center;
+    width: 695px;
+    
 }
 
 .hero__greeting {
     font-size: 24px;
     padding-bottom: 20px;
-    line-height: 2.75rem;
+    
 }
 
 .hero__name {
     font-size: 55px;
     font-family: var(--text-font);
     text-transform: uppercase;
-    line-height: 1.75rem;
+    line-height:4rem;
     font-weight: 700;
-    margin-bottom: 10px;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    margin-bottom: 20px;
+    
 
 }
 
@@ -114,13 +115,15 @@ a {
 
 .hero__about {
     font-size: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     line-height: 1.2;
     color: #fff;
     font-family: 'Oswald', sans-serif;
 }
-.wrapper {
-color: #fa163f;
+.hero__wrapper {
+color: var(--primary-color);
+white-space: nowrap;
+
 
 }
 
@@ -359,4 +362,58 @@ color: #fa163f;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media screen and (max-width:992px) {
+    .modal__items{
+        padding: 6px 0;
+    }
+}
+@media screen and (max-width:768px) {
+    .hero__name{
+        font-size: 45px;
+        line-height: 3.5rem;
+    }
+}
+@media screen and (max-width:600px) {
+    .hero__inner{
+        width: 100%;
+    }
+    .hero__about{
+        font-size: 16px;
+    }
+    .hero__name{
+        font-size: 35px;
+        line-height: 45px;
+
+    }
+    .hero__btn-open{
+        top: 100px;
+    }
+    .modal__btn-close{
+        top: 100px;
+    }
+    .modal__items{
+        padding: 4px;
+    }
+    .modal__box{
+        padding: 10px 0;
+    }
+}
+@media screen  and (max-width:368px){
+    .hero__greeting{
+        font-size: 22px;
+    }
+     .hero__about {
+         font-size: 16px;
+     }
+
+     .hero__name {
+         font-size: 30px;
+         line-height: 45px;
+
+     }
+     .hero__link{
+         padding: 10px 12px;
+         font-size: 15px;
+     }
 }

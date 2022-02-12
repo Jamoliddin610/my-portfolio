@@ -45,3 +45,9 @@ elmodalclose.addEventListener('click',function(){
     elmodal.classList.remove('show-modal');
 })
 
+var typed = new Typed('#textAnime', {
+  strings: ['Web developer', 'Freelancer'],
+  typeSpeed: 50,
+  backSpeed: 30,
+  loop:true
+});
