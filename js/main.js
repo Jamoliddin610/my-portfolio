@@ -6,6 +6,7 @@ let elred = document.getElementById('red-color');
 let elmodalopen = document.getElementById('BtnModalopen');
 let elmodalclose = document.getElementById('BtnModalclose');
 let elmodal = document.getElementById('modalEl');
+let elabout = document.getElementById('about-cont')
 
 
 elred.addEventListener('click',function(){
@@ -39,17 +40,25 @@ elgreen.addEventListener('click',function(){
 elmodalopen.addEventListener('click',function(){
     elbody.classList.add('pad-left');
     elmodal.classList.add('show-modal');
-    elmodalopen.classList.add('disp-none')
+    elmodalopen.classList.add('disp-none');
+    elabout.classList.add('about-width');
 })
 elmodalclose.addEventListener('click',function(){
     elbody.classList.remove('pad-left');
     elmodal.classList.remove('show-modal');
     elmodalopen.classList.remove('disp-none')
+    elabout.classList.remove('about-width');
 
 })
 
 var typed = new Typed('#textAnime', {
   strings: ['Web developer', 'Freelancer'],
+  typeSpeed: 50,
+  backSpeed: 30,
+  loop:true
+});
+var typed = new Typed('#textAnimeAbout', {
+  strings: ['Najmiddiov Jamoliddin','Web developer', 'Freelancer'],
   typeSpeed: 50,
   backSpeed: 30,
   loop:true
