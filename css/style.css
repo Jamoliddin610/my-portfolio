@@ -667,7 +667,7 @@ a {
          height: 360px;
      }
      .show-modal{
-         width: 100%;
-         z-index: 110000;
+         width: 375px;
+         z-index: 10;
      }
 }
