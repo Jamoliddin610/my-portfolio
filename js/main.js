@@ -6,7 +6,13 @@ let elred = document.getElementById('red-color');
 let elmodalopen = document.getElementById('BtnModalopen');
 let elmodalclose = document.getElementById('BtnModalclose');
 let elmodal = document.getElementById('modalEl');
-let elabout = document.getElementById('about-cont')
+let elabout = document.getElementById('about-cont');
+let elservices = document.getElementById('services-con');
+let elportfolio = document.getElementById('portfolio-cont');
+let elcounter = document.getElementById('counter-cont');
+let elconatct = document.getElementById('contact-con');
+
+
 
 
 elred.addEventListener('click',function(){
@@ -42,12 +48,26 @@ elmodalopen.addEventListener('click',function(){
     elmodal.classList.add('show-modal');
     elmodalopen.classList.add('disp-none');
     elabout.classList.add('about-width');
+    elservices.classList.add('services-width');
+    elportfolio.classList.add('portfolio-width');
+    elcounter.classList.add('counter-width');
+    elconatct.classList.add('contact-width');
+
+
 })
 elmodalclose.addEventListener('click',function(){
     elbody.classList.remove('pad-left');
     elmodal.classList.remove('show-modal');
-    elmodalopen.classList.remove('disp-none')
+    elmodalopen.classList.remove('disp-none');
     elabout.classList.remove('about-width');
+    elservices.classList.remove('services-width');
+    elportfolio.classList.remove('portfolio-width');
+    elcounter.classList.remove('counter-width');
+    elconatct.classList.remove('contact-width');
+
+
+
+
 
 })
 
@@ -174,3 +194,42 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
+(function ($) {
+    "use strict";
+
+    //Page cursors
+
+    document.getElementsByTagName("body")[0].addEventListener("mousemove", function (n) {
+        t.style.left = n.clientX + "px",
+            t.style.top = n.clientY + "px",
+            e.style.left = n.clientX + "px",
+            e.style.top = n.clientY + "px",
+            i.style.left = n.clientX + "px",
+            i.style.top = n.clientY + "px"
+    });
+    var t = document.getElementById("cursor"),
+        e = document.getElementById("cursor2"),
+        i = document.getElementById("cursor3");
+
+    function n(t) {
+        e.classList.add("hover"), i.classList.add("hover")
+    }
+
+    function s(t) {
+        e.classList.remove("hover"), i.classList.remove("hover")
+    }
+    s();
+    for (var r = document.querySelectorAll("a"), a = r.length - 1; a >= 0; a--) {
+        o(r[a])
+    }
+
+    function o(t) {
+        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+    }
+})(jQuery);
+
+
+
+
+
+
