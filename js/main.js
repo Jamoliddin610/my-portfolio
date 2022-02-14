@@ -90,7 +90,7 @@ particlesJS("particles-js", {
       "value": 100,
       "density": {
         "enable": true,
-        "value_area": 400
+        "value_area": 600
       }
     },
     "color": {
@@ -227,6 +227,20 @@ particlesJS("particles-js", {
         t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
     }
 })(jQuery);
+
+
+window.onscroll = () => {scrollNavbar()};
+
+scrollNavbar = () => {
+    const up = document.getElementById("up");
+
+    if (document.documentElement.scrollTop > 100) {
+        up.classList.add("pa-up");
+    } 
+    else {
+        up.classList.remove("pa-up");}
+};
+
 
 
 

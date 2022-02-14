@@ -211,7 +211,7 @@ a {
     z-index: 10;
     opacity: 0;
     overflow: hidden;
-    transition: 1s;
+    transition: 0.3s;
 
 }
 
@@ -945,7 +945,7 @@ a {
     z-index: 100;
 }
 .portfolio__content-box:hover .portfolio__text {
-    animation: portfolio-txt 2s;
+    animation: portfolio-txt 1s;
     opacity: 1;
 }
 @keyframes portfolio-txt {
@@ -966,7 +966,7 @@ a {
     }
 }
 .portfolio__content-box:hover .portfolio__con-text-box::before{
-    animation: before 1s;
+    animation: before 0.5s;
     opacity: 1;
 }
 @keyframes before {
@@ -1057,7 +1057,7 @@ a {
 .contact__form-input{
     display: block;
     width: 100%;
-        color: #555;
+        color: #fff;
         background: #000000;
         min-height: 45px;
         padding: 0 0 0 10px;
@@ -1182,4 +1182,153 @@ a {
     .foot__content-box{
         margin-bottom: 20px;
     }
+}
+/* jamoliddin finished foot section and started -scroolbar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: var(--primary-color);
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: transparent;
+}
+
+::-webkit-scrollbar-track:active {
+    background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+/* *=====back2top css start=====*/
+ .back2top {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    display: none;
+    z-index: 33;
+}
+.pa-up{
+    display: block;
+}
+ .back2top span {
+    width: 40px;
+    height: 40px;
+    background: #0c0c0c;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding-top: 4px;
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    transition: all linear 0.3s;
+}
+
+ .back2top span:hover {
+    background: var(--primary-color);
+}
+
+/* ===== back2top css end ===== */
+/* jamoliddin started partner section */
+#partner{
+    padding: 50px 0;
+    background-color: #000;
+}
+.partner__box{
+    width: 1150px;
+    padding: 0 15px;
+}
+.partner__wrapper{
+    width: 140px;
+    height: 125px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.partner__img{
+    width: 100%;
+    
+}
+/* Слайдер */
+.slick-slider {}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized {}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted {}
+
+/* Ограничивающая оболочк   а */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+}
+
+
+
+.partner__row {
+    position: relative;
+}
+.partner__row .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+}
+.partner__row .slick-arrow.slick-prev{
+    left: 0;
+}
+.partner__row .slick-arrow.slick-next {
+    right:  0;
+}
+.partner__wrapper{
+    background-color: #fff;
+    margin:0 20px;
+}
+.wrap-first{
+    background-color: #021120;
+}
+.webdev{
+    height: 100%;
+    object-fit: contain;
+}
+@media screen and (max-width:1000px) {
+    .partner__box{
+        width: 90%;
+    }
+}
+@media screen and (max-width:767px) {
+    .partner__wrapper{
+        margin: 0 10px;
+    }
+    
 }
