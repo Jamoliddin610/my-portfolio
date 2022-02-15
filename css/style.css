@@ -41,9 +41,10 @@ body {
     color: #fff;
     font-weight: 400;
     letter-spacing: 1px;
-    transition: 1s;
+    transition: 0.5s;
     background-color: #0c0c0c;
     cursor: none;
+    overflow-x: hidden;
 
 }
 
@@ -211,7 +212,7 @@ a {
     z-index: 10;
     opacity: 0;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 1s;
 
 }
 

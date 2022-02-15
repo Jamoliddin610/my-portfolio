@@ -87,7 +87,7 @@ var typed = new Typed('#textAnimeAbout', {
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 100,
+      "value": 150,
       "density": {
         "enable": true,
         "value_area": 600
@@ -107,27 +107,27 @@ particlesJS("particles-js", {
       },
       "image": {
         "src": "img/github.svg",
-        "width": 100,
+        "width":100,
         "height": 100
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 1,
       "random": false,
       "anim": {
         "enable": false,
         "speed": 1,
-        "opacity_min": 0.1,
+        "opacity_min": 1,
         "sync": false
       }
     },
     "size": {
-      "value": 3,
+      "value": 4,
       "random": true,
       "anim": {
         "enable": false,
         "speed": 40,
-        "size_min": 0.1,
+        "size_min": 1,
         "sync": false
       }
     },
@@ -135,8 +135,8 @@ particlesJS("particles-js", {
       "enable": true,
       "distance": 150,
       "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
+      "opacity": 1,
+      "width": 1,
     },
     "move": {
       "enable": true,
@@ -175,7 +175,7 @@ particlesJS("particles-js", {
       },
       "bubble": {
         "distance": 400,
-        "size": 40,
+        "size": 50,
         "duration": 2,
         "opacity": 8,
         "speed": 3
